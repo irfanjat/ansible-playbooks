@@ -1,0 +1,14 @@
+---
+
+-  name: Copying files to remote
+   hosts: servers
+   become: true
+   tasks:
+   - name: Copy files
+     copy:
+       src: /home/irfan/ansible/myfile.txt
+       dest: /tmp/
+       owner: ubuntu
+       group: ubuntu
+       mode: ugo=rw
+       backup: true

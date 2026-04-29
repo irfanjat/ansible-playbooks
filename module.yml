@@ -1,0 +1,16 @@
+- name: File Module
+  hosts: servers
+
+  tasks:
+    - name: Creating a file
+      file:
+        path: /tmp/newfile.txt
+        state: absent
+        owner: ubuntu
+        group: ubuntu
+        mode: u=rwx,g=rw,o=r
+
+    - name: Creating a directory
+      file:
+        path: /tmp/myfolder
+        state: absent
