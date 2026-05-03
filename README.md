@@ -1,4 +1,4 @@
-# 🚀 Ansible Playbooks Collection.
+# 🚀 Ansible Playbooks Collection
 
 A collection of **Ansible playbooks** for automating common system administration and DevOps tasks.
 
